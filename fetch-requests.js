@@ -14,6 +14,7 @@ async function getPosts() {
   let url = 'http://localhost:5000/posts';
   let response = await fetch(url);
   let data = await response.json();
+  console.log(data);
 }
 
 getPosts();
